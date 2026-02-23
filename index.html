@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Desafio 02 - Responsividade</title>
+</head>
+<body>
+    <header class="header">
+        <div class ="container">
+            <a href="" class="home">HOME</a>
+            <a href="" class="about">ABOUT</a>
+            <a href="" class="product">PRODUCT</a>
+            <a href="" class="service">SERVICE</a>
+            <a href="" class="contact">CONTACT</a>
+            <button class="login">Log in</button>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </header>
+    <main>
+        <section class="section">
+            <img src="./Illustration 2.png" alt="">
+        </section>
+        <section class="section2">
+            <h1>WE CARE</h1>
+            <h2>About Your Pet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, veniam quasi, natus cupiditate voluptatum harum nesciunt rerum tenetur hic quo reiciendis blanditiis qui tempora, ipsum sunt? Maxime architecto beatae ipsum!</p>
+            <button class="explore">EXPLORE</button>
+        </section>
+    </main>
+    <script>
+        const menuToggle = document.querySelector('#menu-toggle');
+        const header = document.querySelector('.header');
+        menuToggle.addEventListener('click', function() {
+        header.classList.toggle('mobile-menu-open');
+        });
+    </script>
+</body>
+</html>
